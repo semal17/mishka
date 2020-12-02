@@ -37,10 +37,11 @@ html {
   
   body {
     color: #000000;
-    @extend %os-regular;
-    font-family: Helvetica, Arial;
+    font-family: 'OpenSans-Bold', Helvetica, Arial;
+    font-weight: 400;
     font-style: 17px;
     line-height: 30px;
+    background-color: green;
   }
   
   .container {
@@ -48,6 +49,7 @@ html {
     padding: 0 30px;
     margin: 0 auto;
     overflow: hidden;
+    position: relative;
       }
 
       @media (min-width: 768px) {

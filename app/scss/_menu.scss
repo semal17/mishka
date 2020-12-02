@@ -3,6 +3,7 @@
   &__logo {
     padding: 22px 0 22px;
     text-align: center;
+    background-color: #fff;
   }
   &__logo-link {
     &:hover {
@@ -80,7 +81,7 @@
   &__link {
     display: block;
     padding: 30px 0 30px 76px;
-    @extend %os-bold;
+    font-weight: 700;
     line-height: 24px;
     text-align: left;
     background-color: white;
@@ -142,6 +143,7 @@
       justify-content: flex-start;
       align-self: center;
       padding: 0;
+      
     }
     &__open {
       display: none;
@@ -153,7 +155,10 @@
       order: 1;
       width: 384px;
       border-top: 1px solid #ececec;
-      margin-left: -50px;
+      position: absolute;
+      top: 85px;
+      left: 0;
+
       min-height: 85px;
       background-color: green;
       
@@ -228,7 +233,9 @@
       padding: 0px 0;
       
       border-top: 1px solid #ececec;
-      margin-right: -50px;
+      position: absolute;
+      top: 85px;
+      right: 0;
       background-color: green;
       min-height: 85px;
     }
@@ -268,7 +275,7 @@
             display: flex;
             order: 2;
             border-top: 1px solid #ececec;
-            background-color: $base-color;
+            background-color: green;
                         width: 716px;    
 
            
