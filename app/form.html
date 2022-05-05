@@ -1,305 +1,290 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <style>html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:0.67em 0}a{background-color:transparent}img{border-style:none}button,input{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button{text-transform:none}button,[type="button"]{-webkit-appearance:button}button::-moz-focus-inner,[type="button"]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type="button"]:-moz-focusring{outline:1px dotted ButtonText}[type="checkbox"],[type="radio"]{-webkit-box-sizing:border-box;box-sizing:border-box;padding:0}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}@font-face{font-family:'OpenSans';src:url("../fonts/OpenSans-Regular.woff2") format("woff2"),url("../fonts/OpenSans-Regular.woff") format("woff");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:'OpenSans';src:url("../fonts/OpenSans-Bold.woff2") format("woff2"),url("../fonts/OpenSans-Bold.woff") format("woff");font-weight:700;font-style:normal;font-display:swap}html{-webkit-box-sizing:border-box;box-sizing:border-box}*,*::before,*::after{-webkit-box-sizing:inherit;box-sizing:inherit}a{text-decoration:none;color:inherit}ul,li{list-style:none;margin:0;padding:0}p{margin:0}h1{margin:0;font-size:inherit}body{color:#000000;font-family:'OpenSans',Helvetica,Arial;font-weight:400;font-style:17px;line-height:30px;background-color:#f9f9f9}.container{max-width:320px;padding:0 30px;margin:0 auto;position:relative}@media (min-width:768px){.container{max-width:768px;padding:0 50px}}@media (min-width:1250px){.container{max-width:1150px}}.header{z-index:5;min-height:79px;border-top:1px solid #e5e5e5;border-bottom:1px solid #e5e5e5;background-color:#fff}@media (min-width:768px){.header{position:relative;border-top:none}}.menu{z-index:5}.menu__logo{padding:22px 0;text-align:center;background-color:#fff}.menu__open{position:absolute;top:28px;right:30px;width:22px;height:22px;padding:0;font-size:0;background-color:transparent;border:none;outline:none}.menu__list,.menu__offer,.menu__user{display:none}.menu__offer,.menu__delivery{display:none}.menu--closed .menu__open::before{content:"";position:absolute;top:4px;left:0px;width:21px;height:2px;background:black;-webkit-box-shadow:0 6px 0 0 black,0 12px 0 0 black;box-shadow:0 6px 0 0 black,0 12px 0 0 black}.menu__item{position:relative;border-top:1px solid #ececec;margin:0 -30px}.menu__search{position:relative}.menu__search-icon{position:absolute;top:32px;left:32px;width:18px;height:18px;opacity:0.2}.menu__cart{position:relative}.menu__icon-cart{position:absolute;top:30px;left:30px;width:21px;height:18px;opacity:0.2}.menu__link{display:block;padding:30px 0 30px 76px;font-weight:700;line-height:24px;text-align:left;background-color:white}@media (min-width:768px){.menu{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.menu__item{margin:0;border:none}.menu__logo{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:0}.menu__open{display:none}.menu__list{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-negative:0;flex-shrink:0;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1;width:384px;background-color:transparent;position:absolute;top:89px;left:0;min-height:85px}.menu__list-link{width:167px;padding:20px 0 10px;font-size:15px;line-height:24px;background-color:transparent}.menu__list-link--catalog{width:217px;padding-left:50px}.menu__offer{display:none}.menu__user{display:-webkit-box;display:-ms-flexbox;display:flex}.menu__search{position:relative;width:82px;height:88px;border-right:1px solid #ececec;border-left:1px solid #ececec}.menu__search-icon{position:absolute;top:36px;left:33px;width:19px;height:18px}.menu__search-link{position:relative;display:block;width:100%;height:100%;padding:0;font-size:0}.menu__cart{position:relative;width:265px;padding-right:0;padding-left:0}.menu__icon-cart{position:absolute;top:35px;left:31px;width:21px;height:18px}.menu__cart-link{position:relative;display:block;padding:32px 0 32px 82px;text-align:right;font-size:17px;line-height:24px}.menu__delivery{display:block;-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2;width:384px;padding:0px 0;position:absolute;top:89px;right:0;background-color:transparent;min-height:85px}.menu__delivery-link{background-color:transparent;font-size:15px;line-height:24px;font-weight:400;font-family:"OpenSans-Regular",Helvetica,Arial;padding:20px 0 10px 104px}}@media (min-width:1250px){.menu__list{background-color:#fff;-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1;width:450px;margin:0;position:static}.menu__list-link{background-color:#fff;font-size:17px;width:184px;padding:32px 0}.menu__list-link--catalog{border-right:1px solid #ececec}.menu__list-link--order{text-align:right}.menu__offer{position:absolute;top:89px;left:50px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2;border-top:1px solid #ececec;width:660px}.menu__offer-link{display:block;width:184px;padding:18px 0;background-color:transparent}.menu__offer-link--sale{padding-left:30px}.menu__delivery{position:absolute;top:89px;right:50px}.menu__delivery-link{text-align:right}}.intro-form{background-color:#f1f1f1}.intro-form__heading{font-size:27px;line-height:30px;text-align:center;margin:0 auto;font-weight:400;padding:75px 0}.order-list{padding:25px 0 55px;background-color:#fff}.order-list__text{margin-bottom:25px;font-size:13px;line-height:24px;width:242px}.order-form__wrapper{position:relative}.order-form__title{position:absolute;top:0;left:0;font-weight:700;font-size:17px;line-height:16px;color:#62d1ba;text-transform:uppercase}.order-form__title::after{content:"";position:absolute;top:50%;left:62px;width:198px;height:1px;background-color:#62d1ba}.order-form__type{padding-top:51px}.order-form__radio,.order-form__checkbox{display:none}.order-form__group{margin-bottom:22px;padding-left:64px}.order-form__label{position:relative;display:block;font-weight:700;line-height:18px}.order-form__label--radio::before{content:"";position:absolute;top:-7px;left:-64px;width:35px;height:35px;border:2px solid black;border-radius:50%}.order-form__label--radio::after{content:"";position:absolute;top:3px;left:-54px;display:none;width:16px;height:16px;background-color:#62d1ba;border-radius:50%}.order-form__label--checkbox::before{content:"";position:absolute;top:-7px;left:-64px;width:36px;height:36px;border:2px solid black}.order-form__label--checkbox::after{content:"";position:absolute;top:-3px;left:-58px;display:none;width:29px;height:23px;border-radius:50%;background-image:url("../images/icon-tick.svg");background-position:center;background-repeat:no-repeat}.order-form__radio:checked+.order-form__label--radio::after{display:block}.order-form__checkbox:checked+.order-form__label--checkbox::after{display:block}.order-form__checkboxes{padding-top:50px}.order-form__group--color{margin-bottom:45px}@media (min-width:768px){.intro-form{background-image:url(../images/bg-zigzag-fill.svg);background-repeat:repeat-x;background-position:center bottom}.intro-form__heading{font-size:43px;line-height:50px;font-weight:700;padding:100px 0}.order-list{padding:60px 0 51px}.order-list__text{margin-bottom:70px;font-size:17px;line-height:30px;width:615px}.order-form__wrapper{position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.order-form__title{padding-top:20px;position:relative}.order-form__title::after{display:none}.order-form__type{padding-top:0;width:501px}.order-form__radio,.order-form__checkbox{display:none}.order-form__group{margin-bottom:55px;padding-left:81px}.order-form__label{position:relative;display:block;font-weight:700;line-height:18px;padding-top:10px}.order-form__label--radio::before{top:-11px;left:-81px;width:53px;height:53px}.order-form__label--radio::after{top:4px;left:-64px;width:21px;height:21px}.order-form__label--checkbox::before{top:-7px;left:-81px;width:53px;height:53px}.order-form__label--checkbox::after{left:-75px;width:44px;height:41px}.order-form__section--second{background-color:#f1f1f1;padding:70px 0 20px}.order-form__checkboxes{padding-top:0;width:501px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-wrap:wrap;flex-wrap:wrap}.order-form__group--color{margin-bottom:55px;width:50%}.order-form__section--third{padding-top:70px}}@media (min-width:1250px){.intro-form__heading{font-size:53px;line-height:57px}.order-list{padding:110px 0 51px}.order-list__text{margin-bottom:80px;margin-left:175px;width:676px}.order-form__type{padding-top:0;width:875px}.order-form__radio,.order-form__checkbox{display:none}.order-form__label{font-size:19px}.order-form__section--second{background-color:#f1f1f1}.order-form__checkboxes{width:875px;display:-webkit-box;display:-ms-flexbox;display:flex}.order-form__group--color{margin-bottom:55px;width:30%}}</style>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>MISHKA. Вязание на заказ</title>
-    <link
-      rel="preload"
-      href="fonts/OpenSans-Regular.woff2"
-      as="font"
-      crossorigin
-    />   
-    <link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font"
-      crossorigin
-    />
-    <link rel="preload" href="css/style.min.css" as="style" crossorigin />
-    <link rel="preload" href="js/main.js" as="script" crossorigin />
-    <link rel="stylesheet" href="css/style.min.css" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
-<link rel="manifest" href="images/favicons/site.webmanifest">
-<link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#00aba9">
-<meta name="theme-color" content="#ffffff">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>MISHKA. Вязание на заказ</title>
+  <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" crossorigin />
+  <link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font" crossorigin />
+  <link rel="preload" href="css/style.min.css" as="style" crossorigin />
+  <link rel="preload" href="js/main.js" as="script" crossorigin />
+  <link rel="stylesheet" href="css/style.min.css" />
 
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <nav class="menu menu--closed">
-          <div class="menu__logo">
-            <a href="index.html" class="menu__logo-link">
-              <picture>
-                <source
-                  media="(min-width:1250px)"
-                  srcset="images/logo-desktop.svg"
-                />
-                <source
-                  media="(min-width:768px)"
-                  srcset="images/logo-tablet.svg"
-                />
-                <img
-                  class="menu__logo-main"
-                  src="images/logo-mobile.svg"
-                  alt="Mishka"
-                  title="Mishka"
-                />
-              </picture>
-            </a>
-          </div>
-          <button class="menu__open" type="button">Открыть меню</button>
-          
-          <ul class="menu__list">
-            <li class="menu__item menu__list-item">
-              <a href="catalog.html" class="menu__link menu__list-link menu__list-link--catalog">Каталог товаров</a>
-            </li>
-            <li class="menu__item menu__list-item">
-              <a href="form.html" class="menu__link menu__list-link menu__list-link--order"
-                >Вязание на заказ</a
-              >
-            </li>
-          </ul>
-          <ul class="menu__offer">
-            <li class="menu__item menu__offer-item">
-              <a href="#" class="menu__link menu__offer-link"
-                >Новые поступления</a
-              >
-            </li>
-            <li class="menu__item menu__offer-item">
-              <a href="#" class="menu__link menu__offer-link menu__offer-link--sale">Распродажа</a>
-            </li>
-          </ul>
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="images/favicons/site.webmanifest">
+  <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#00aba9">
+  <meta name="theme-color" content="#ffffff">
 
-          <ul class="menu__user">
-            <li class="menu__item">
-              <div class="menu__search">
-                <a href="#" class="menu__link menu__search-link"
-                  >Поиск по сайту
-                  <svg class="menu__search-icon" width="24" height="24">
-                    <use  xlink:href="images/sprites.svg#icon-search"></use>
-                  </svg>
-                </a>
-              </div>
-            </li>
-            <li class="menu__item">
-              <div class="menu__cart">
-                <a href="#" class="menu__link menu__cart-link"
-                  >Корзина: пока пуста
-                  <svg class="menu__icon-cart" width="24" height="24">
-                    <use  xlink:href="images/sprites.svg#icon-cart"></use>
-                  </svg>
-                </a>
-              </div>
-            </li>
-          </ul>
-        
-          <div class="menu__delivery">
-            <a href="#" class="menu__link menu__delivery-link"
-              >Бесплатная доставка по России</a
-            >
-          </div>
-        </nav>
-      </div>
-    </header>
+</head>
 
-    <main class="main">
-
-        <section class="intro-form">
-            <div class="container">
-              <h1 class="intro-form__heading">Вязание на заказ</h1>
-            </div>
-          </section>
-
-
-          <section class="order-list">
-              <div class="container">
-            <div class="order-list__heading">
-              <p class="order-list__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-            </div>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="menu menu--closed">
+        <div class="menu__logo">
+          <a href="index.html" class="menu__logo-link">
+            <picture>
+              <source media="(min-width:1250px)" srcset="images/logo-desktop.svg" />
+              <source media="(min-width:768px)" srcset="images/logo-tablet.svg" />
+              <img class="menu__logo-main" src="images/logo-mobile.svg" alt="Mishka" title="Mishka" />
+            </picture>
+          </a>
         </div>
-                <form action="#" class="order-form">
-                  <section class="order-form__section order-form__section--first">  
-                      
-                    <div class="container">    
-                        <div class="order-form__wrapper">         
-                    <div class="order-form__title">Тип</div>
-                    <div class="order-form__type">
-                      <div class="order-form__group">
-                        <input type="radio" name="type" id="acessories" class="order-form__radio" checked>
-                        <label for="acessories" class="order-form__label order-form__label--radio">Аксессуар для интерьера</label>
-                      </div>
-                      <div class="order-form__group">
-                        <input type="radio" name="type" id="toy" class="order-form__radio">
-                        <label for="toy" class="order-form__label order-form__label--radio">Детская игрушка</label>
-                      </div>                    
-                    </div>
-                        </div>
-                    </div>   
-                </section>
-                
-                
-                  
+        <button class="menu__open" type="button">Открыть меню</button>
+
+        <ul class="menu__list">
+          <li class="menu__item menu__list-item">
+            <a href="catalog.html" class="menu__link menu__list-link menu__list-link--catalog">Каталог товаров</a>
+          </li>
+          <li class="menu__item menu__list-item">
+            <a href="form.html" class="menu__link menu__list-link menu__list-link--order">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="menu__offer">
+          <li class="menu__item menu__offer-item">
+            <a href="#" class="menu__link menu__offer-link">Новые поступления</a>
+          </li>
+          <li class="menu__item menu__offer-item">
+            <a href="#" class="menu__link menu__offer-link menu__offer-link--sale">Распродажа</a>
+          </li>
+        </ul>
+
+        <ul class="menu__user">
+          <li class="menu__item">
+            <div class="menu__search">
+              <a href="#" class="menu__link menu__search-link">Поиск по сайту
+                <svg class="menu__search-icon" width="24" height="24">
+                  <use xlink:href="images/sprites.svg#icon-search"></use>
+                </svg>
+              </a>
+            </div>
+          </li>
+          <li class="menu__item">
+            <div class="menu__cart">
+              <a href="#" class="menu__link menu__cart-link">Корзина: пока пуста
+                <svg class="menu__icon-cart" width="24" height="24">
+                  <use xlink:href="images/sprites.svg#icon-cart"></use>
+                </svg>
+              </a>
+            </div>
+          </li>
+        </ul>
+
+        <div class="menu__delivery">
+          <a href="#" class="menu__link menu__delivery-link">Бесплатная доставка по России</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section class="intro-form">
+      <div class="container">
+        <h1 class="intro-form__heading">Вязание на заказ</h1>
+      </div>
+    </section>
 
 
-                  <section class="order-form__section order-form__section--second">
-                    <div class="container">
-                        <div class="order-form__wrapper">
-                    <div class="order-form__title">Цвет</div>
-                    <div class="order-form__checkboxes">
-                      <div class="order-form__group order-form__group--color">
-                        <input type="checkbox" name="white" id="white" class="order-form__checkbox" checked>
-                        <label for="white" class="order-form__label order-form__label--checkbox">Белый</label>
-                      </div>
-                      <div class="order-form__group order-form__group--color">
-                        <input type="checkbox" name="grey" id="grey" class="order-form__checkbox" checked>
-                        <label for="grey" class="order-form__label order-form__label--checkbox">Серый</label>
-                      </div>
-                      <div class="order-form__group order-form__group--color">
-                        <input type="checkbox" name="tiffany" id="tiffany" class="order-form__checkbox">
-                        <label for="tiffany" class="order-form__label order-form__label--checkbox">&laquo;Тиффани&raquo;</label>
-                      </div>
-                      <div class="order-form__group order-form__group--color">
-                        <input type="checkbox" name="black" id="black" class="order-form__checkbox">
-                        <label for="black" class="order-form__label order-form__label--checkbox">Черный</label>
-                      </div>
-                      <div class="order-form__group order-form__group--color">
-                        <input type="checkbox" name="pink" id="pink" class="order-form__checkbox">
-                        <label for="pink" class="order-form__label order-form__label--checkbox">Розовый</label>
-                      </div>
-                      <div class="order-form__group order-form__group--color">
-                        <input type="checkbox" name="orange" id="orange" class="order-form__checkbox">
-                        <label for="orange" class="order-form__label order-form__label--checkbox">Оранжевый</label>
-                      </div>
-                    </div>
-                        </div>
+    <section class="order-list">
+      <div class="container">
+        <div class="order-list__heading">
+          <p class="order-list__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и
+            мы свяжемся с вами, чтобы уточнить детали.</p>
+        </div>
+      </div>
+      <form action="#" class="order-form">
+        <section class="order-form__section order-form__section--first">
+
+          <div class="container">
+            <div class="order-form__wrapper">
+              <div class="order-form__title">Тип</div>
+              <div class="order-form__type">
+                <div class="order-form__group">
+                  <input type="radio" name="type" id="acessories" class="order-form__radio" checked>
+                  <label for="acessories" class="order-form__label order-form__label--radio">Аксессуар для
+                    интерьера</label>
                 </div>
-                  </section>
-
-
-                  <section class="order-form__section order-form__section--third">
-                    <div class="container">
-                        <div class="order-form__wrapper">
-                    <div class="order-form__title">ФИО</div>
-                    <div class="order-form__name">
-                      <div class="order-form__group order-form__group--name">
-                        <label for="name" class="order-form__label">Имя:</label>
-                        <input type="text" name="name" id="name" class="order-form__input" placeholder="Введите ваше имя*" required>
-                      </div>
-                      <div class="order-form__group order-form__group--name">
-                        <label for="secondname" class="order-form__label">Фамилия:</label>
-                        <input type="text" name="secondname" id="secondname" class="order-form__input" placeholder="Укажите фамилию*" required>
-                      </div>
-                      <div class="order-form__group order-form__group--name">
-                        <label for="middlename" class="order-form__label">Отчество:</label>
-                        <input type="text" name="middlename" id="middlename" class="order-form__input" placeholder="Отчество, если желаете">
-                      </div>
-                    </div>
-                        </div>
-                    </div>
-                  </section>
+                <div class="order-form__group">
+                  <input type="radio" name="type" id="toy" class="order-form__radio">
+                  <label for="toy" class="order-form__label order-form__label--radio">Детская игрушка</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
 
 
-                  <section class="order-form__section order-form__section--fourth">
-                    <div class="container">
-                        <div class="order-form__wrapper">
-                    <div class="order-form__title">Тел</div>
-                      <div class="order-form__group order-form__group--contacts order-form__group--tel">                    
-                      <input type="tel" name="tel" id="tel" class="order-form__input order-form__input--tel" pattern="\D7[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}" placeholder="+7 XXX XXX XX XX*" required>
-                                          </div>
-                    </div>
-                    </div>
-                  </section>
+
+
+        <section class="order-form__section order-form__section--second">
+          <div class="container">
+            <div class="order-form__wrapper">
+              <div class="order-form__title">Цвет</div>
+              <div class="order-form__checkboxes">
+                <div class="order-form__group order-form__group--color">
+                  <input type="checkbox" name="white" id="white" class="order-form__checkbox" checked>
+                  <label for="white" class="order-form__label order-form__label--checkbox">Белый</label>
+                </div>
+                <div class="order-form__group order-form__group--color">
+                  <input type="checkbox" name="grey" id="grey" class="order-form__checkbox" checked>
+                  <label for="grey" class="order-form__label order-form__label--checkbox">Серый</label>
+                </div>
+                <div class="order-form__group order-form__group--color">
+                  <input type="checkbox" name="tiffany" id="tiffany" class="order-form__checkbox">
+                  <label for="tiffany"
+                    class="order-form__label order-form__label--checkbox">&laquo;Тиффани&raquo;</label>
+                </div>
+                <div class="order-form__group order-form__group--color">
+                  <input type="checkbox" name="black" id="black" class="order-form__checkbox">
+                  <label for="black" class="order-form__label order-form__label--checkbox">Черный</label>
+                </div>
+                <div class="order-form__group order-form__group--color">
+                  <input type="checkbox" name="pink" id="pink" class="order-form__checkbox">
+                  <label for="pink" class="order-form__label order-form__label--checkbox">Розовый</label>
+                </div>
+                <div class="order-form__group order-form__group--color">
+                  <input type="checkbox" name="orange" id="orange" class="order-form__checkbox">
+                  <label for="orange" class="order-form__label order-form__label--checkbox">Оранжевый</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <section class="order-form__section order-form__section--third">
+          <div class="container">
+            <div class="order-form__wrapper">
+              <div class="order-form__title">ФИО</div>
+              <div class="order-form__name">
+                <div class="order-form__group order-form__group--name">
+                  <label for="name" class="order-form__label">Имя:</label>
+                  <input type="text" name="name" id="name" class="order-form__input" placeholder="Введите ваше имя*"
+                    required>
+                </div>
+                <div class="order-form__group order-form__group--name">
+                  <label for="secondname" class="order-form__label">Фамилия:</label>
+                  <input type="text" name="secondname" id="secondname" class="order-form__input"
+                    placeholder="Укажите фамилию*" required>
+                </div>
+                <div class="order-form__group order-form__group--name">
+                  <label for="middlename" class="order-form__label">Отчество:</label>
+                  <input type="text" name="middlename" id="middlename" class="order-form__input"
+                    placeholder="Отчество, если желаете">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
 
 
-                  <section class="order-form__section order-form__section--fifth">
-                    <div class="container">
-                        <div class="order-form__wrapper">
-                    <div class="order-form__title">e-mail</div>
-                    <div class="order-form__group order-form__group--contacts order-form__group--email"> 
-                      <input type="email" name="email" id="email" class="order-form__input order-form__input--email" placeholder="Ваш Email*" required>
-                                         </div>
-                    </div>
-                    </div>
-                  </section>
+        <section class="order-form__section order-form__section--fourth">
+          <div class="container">
+            <div class="order-form__wrapper">
+              <div class="order-form__title">Тел</div>
+              <div class="order-form__group order-form__group--contacts order-form__group--tel">
+                <input type="tel" name="tel" id="tel" class="order-form__input order-form__input--tel"
+                  pattern="\D7[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}" placeholder="+7 XXX XXX XX XX*" required>
+              </div>
+            </div>
+          </div>
+        </section>
 
 
 
-                  <section class="order-form__section order-form__section--sixth">
-                    <div class="container">
-                        <div class="order-form__wrapper">
-                    <div class="order-form__title">Доп</div>
-                    <div class="order-form__group order-form__group--contacts"> 
-                      <textarea name="wishes" id="wishes" cols="30" rows="10" class="order-form__textarea" placeholder="Опишите все Ваши пожелания к заказу"></textarea>
-                                          </div>
-                    </div>
-                    </div>
-                  </section>
+        <section class="order-form__section order-form__section--fifth">
+          <div class="container">
+            <div class="order-form__wrapper">
+              <div class="order-form__title">e-mail</div>
+              <div class="order-form__group order-form__group--contacts order-form__group--email">
+                <input type="email" name="email" id="email" class="order-form__input order-form__input--email"
+                  placeholder="Ваш Email*" required>
+              </div>
+            </div>
+          </div>
+        </section>
 
 
 
-                  <section class="order-form__section order-form__section--seventh">
-                    <div class="container">
-                        <div class="order-form__wrapper">
-                    <div class="order-form__group order-form__group--inputs">                      
-                      <div class="order-form__requirement">
-                        <span class="order-form__requirement-text">*Поля обязательны для заполнения</span>
-                      </div>
-                      <button type="submit" class="order-form__button">Отправить заказ</button>
-                    </div>
-                    </div>
-                    </div>
-                  </section>
-                </form>
-          </section>
-</main>
+        <section class="order-form__section order-form__section--sixth">
+          <div class="container">
+            <div class="order-form__wrapper">
+              <div class="order-form__title">Доп</div>
+              <div class="order-form__group order-form__group--contacts">
+                <textarea name="wishes" id="wishes" cols="30" rows="10" class="order-form__textarea"
+                  placeholder="Опишите все Ваши пожелания к заказу"></textarea>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+        <section class="order-form__section order-form__section--seventh">
+          <div class="container">
+            <div class="order-form__wrapper">
+              <div class="order-form__group order-form__group--inputs">
+                <div class="order-form__requirement">
+                  <span class="order-form__requirement-text">*Поля обязательны для заполнения</span>
+                </div>
+                <button type="submit" class="order-form__button">Отправить заказ</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </form>
+    </section>
+  </main>
 
   <footer class="main-footer">
     <div class="container">
       <div class="main-footer__wrapper">
-      <div class="main-footer__logo">
-        <a href="index.html" class="main-footer__link">
-          <svg class="main-footer__logotype" width="101.615" height="34.056">
-          <use xlink:href="images/sprites.svg#logo-footer"></use>
-          </svg>
-        </a>
-      </div>
-      <div class="main-footer__social">
-        <a href="#" class="main-footer__social-link main-footer__social-link--inst">Инстаграмм
-          <svg class="main-footer__icon-insta" width="21.769" height="21.334">
-          <use xlink:href="images/sprites.svg#icon-insta"></use>
-          </svg>
-        </a>
-        <a href="#" class="main-footer__social-link main-footer__social-link--fb">Фейсбук
-          <svg class="main-footer__icon-fb" width="14.962" height="27.718">
-          <use xlink:href="images/sprites.svg#icon-fb"></use>
-          </svg>
-        </a>
-        <a href="#" class="main-footer__social-link main-footer__social-link--tw">Твиттер
-          <svg class="main-footer__icon-twitter" width="23.494" height="20.168">
-          <use xlink:href="images/sprites.svg#icon-twitter"></use>
-          </svg>
-        </a>
-      </div>
-      <div class="main-footer__copyright">
-        <a href="https://github.com/semal17" class="main-footer__copyright-link">
-          <span class="main-footer__copyright-text">
-          Разработано</span>
-          <svg class="main-footer__icon-github" width="30" height="30">
-            <use xlink:href="images/sprites.svg#github"></use>
-          </svg>
-        </a>
+        <div class="main-footer__logo">
+          <a href="index.html" class="main-footer__link">
+            <svg class="main-footer__logotype" width="101.615" height="34.056">
+              <use xlink:href="images/sprites.svg#logo-footer"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="main-footer__social">
+          <a href="#" class="main-footer__social-link main-footer__social-link--inst">Инстаграмм
+            <svg class="main-footer__icon-insta" width="21.769" height="21.334">
+              <use xlink:href="images/sprites.svg#icon-insta"></use>
+            </svg>
+          </a>
+          <a href="#" class="main-footer__social-link main-footer__social-link--fb">Фейсбук
+            <svg class="main-footer__icon-fb" width="14.962" height="27.718">
+              <use xlink:href="images/sprites.svg#icon-fb"></use>
+            </svg>
+          </a>
+          <a href="#" class="main-footer__social-link main-footer__social-link--tw">Твиттер
+            <svg class="main-footer__icon-twitter" width="23.494" height="20.168">
+              <use xlink:href="images/sprites.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="main-footer__copyright">
+          <a href="https://github.com/semal17" class="main-footer__copyright-link">
+            <span class="main-footer__copyright-text">
+              Разработано</span>
+            <svg class="main-footer__icon-github" width="30" height="30">
+              <use xlink:href="images/sprites.svg#github"></use>
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
-    </div>
-  </footer>   
+  </footer>
 
-    <script src="js/main.min.js"></script>
-  </body>
+  <script src="js/main.min.js"></script>
+</body>
+
 </html>
