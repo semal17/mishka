@@ -25,6 +25,12 @@
     text-align: center;
     padding: 55px 8px 115px;
   }
+  &__items {
+    position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  }
   &__item {
     font-size: 19px;
     line-height: 24px;
@@ -32,6 +38,7 @@
     text-align: left;
     color: white;
     width: 100%;
+    transition: transform 0.5s;
     &:hover {
       transform: translateY(-5px);
     }
@@ -42,13 +49,19 @@
   &__item-right {
     background-color: #56c3b2;
   }
+ 
   &__link {
+    fill: #35a999;
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 103px;
+    width: 260px;
+    margin: 0 auto;
+    transition: transform 0.5s;
     &:hover {
       transform: translateY(-5px);
+      fill: #29a592;
     }
     &:active {
       opacity: 0.2;
@@ -57,13 +70,7 @@
   &__link-text {
     width: 130px;
   }
-  &__icon-toy,
-  &__icon-interior {
-    fill: #35a999;
-    &:hover {
-      fill: #29a592;
-    }
-  }
+  
 }
 
 @media (min-width: 768px) {
@@ -106,6 +113,7 @@
     &__items {
       display: flex;
       justify-content: space-between;
+      width: 100%;
     }
     &__item {
       padding: 0 37px 0 32px;

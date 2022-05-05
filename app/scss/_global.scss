@@ -2,6 +2,7 @@ html {
     box-sizing: border-box;
     
     }
+      
   
   *,
   *::before,
@@ -21,6 +22,21 @@ html {
     padding: 0;
   }
 
+  .visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
   p {
     margin: 0;
   }
@@ -37,7 +53,7 @@ html {
   
   body {
     color: #000000;
-    font-family: 'OpenSans-Bold', Helvetica, Arial;
+    font-family: 'OpenSans', Helvetica, Arial;
     font-weight: 400;
     font-style: 17px;
     line-height: 30px;

@@ -40,11 +40,10 @@
     line-height: 20px;
     text-align: left;
   }
-  &__table-row {
-    border-bottom: 3px solid #e5e5e5;
-  }
+  
   &__table-col {
     padding: 10px 0;
+    border-bottom: 1px solid #e5e5e5;
   }
   &__image {
     width: 100%;
@@ -82,6 +81,7 @@
     &__heading {
       font-size: 43px;
       line-height: 50px;
+      margin-left: 0;
     }
     &__title {
       line-height: 17px;

@@ -170,7 +170,7 @@
     padding-bottom: 105px;
     &::before {
       top: 134px;
-      left: 154px;
+      left: calc((100% - 1050px) / 2);
     }
     &__heading {
       padding-top: 150px;
@@ -192,7 +192,7 @@
       width: 525px;
       position: absolute;
       top: 72px;
-      right: 101px;
+      right: calc((100% - 1050px) / 2);
     }
     &__map-inner {
       width: 525px;
@@ -224,13 +224,4 @@
   }
 }
 
-@media (min-width: 1630px) {
-  .contacts {
-    &::before {
-      left: 387px;
-    }
-    &__map {
-      right: 315px;
-    }
-  }
-}
+

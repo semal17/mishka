@@ -30,12 +30,13 @@
     font-size: 18px;
     line-height: 20px;
     display: block;
-    width: 100%;
-    border: 2px solid black;
+    width: 100%;    
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
     padding: 15px 0;
+    z-index: 7;
+    margin-top: 60px;
     &:hover {
       color: white;
       background-color: black;
@@ -43,6 +44,9 @@
     &:active {
       color: rgba(255, 255, 255, 0.3);
     }
+  }
+  &__link {
+    cursor: pointer;
   }
   &__buttons {
     margin: 35px 0;
@@ -59,6 +63,7 @@
     background-position: center center;
     border: 1px solid #ececec;
     outline: none;
+    z-index: 8;
     &:hover {
       opacity: 0.6;
     }
@@ -66,7 +71,7 @@
     &:active {
       opacity: 0.3;
     }
-    &:focus {
+    &:focus-visible {
       border: 1px solid black;
     }
     &-prev {
@@ -140,6 +145,8 @@
       position: absolute;
       top: -2px;
       right: 50px;
+      margin-top: 5px;
+      border: 2px solid black;
     }
     &__buttons {
       width: 160px;
@@ -171,12 +178,14 @@
     position: relative;
     padding: 60px 0 188px;
     &::before {
-      left: 100px;
+      left: calc((100% - 1050px) / 2);
+      
     }
     &__wrapper {
       width: 875px;
       display: block;
       margin-left: auto;
+      z-index: 3;
     }
     &__heading {
       font-size: 53px;
@@ -189,10 +198,4 @@
   }
 }
 
-@media (min-width: 1630px) {
-  .reviews {
-    &::before {
-      left: 380px;
-    }
-  }
-}
+
