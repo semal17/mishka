@@ -1,310 +1,324 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>  
-    <style>html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:0.67em 0}a{background-color:transparent}img{border-style:none}button,input{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button{text-transform:none}button,[type="button"],[type="submit"]{-webkit-appearance:button}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type="button"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText}[type="radio"]{-webkit-box-sizing:border-box;box-sizing:border-box;padding:0}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}@font-face{font-family:'OpenSans';src:url("../fonts/OpenSans-Regular.woff2") format("woff2"),url("../fonts/OpenSans-Regular.woff") format("woff");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:'OpenSans';src:url("../fonts/OpenSans-Bold.woff2") format("woff2"),url("../fonts/OpenSans-Bold.woff") format("woff");font-weight:700;font-style:normal;font-display:swap}html{-webkit-box-sizing:border-box;box-sizing:border-box}*,*::before,*::after{-webkit-box-sizing:inherit;box-sizing:inherit}a{text-decoration:none;color:inherit}ul,li{list-style:none;margin:0;padding:0}p{margin:0}h1,h2{margin:0;font-size:inherit}body{color:#000000;font-family:'OpenSans',Helvetica,Arial;font-weight:400;font-style:17px;line-height:30px;background-color:#f9f9f9}.container{max-width:320px;padding:0 30px;margin:0 auto;position:relative}@media (min-width:768px){.container{max-width:768px;padding:0 50px}}@media (min-width:1250px){.container{max-width:1150px}}.header{z-index:5;min-height:79px;border-top:1px solid #e5e5e5;border-bottom:1px solid #e5e5e5;background-color:#fff}@media (min-width:768px){.header{position:relative;border-top:none}}.menu{z-index:5}.menu__logo{padding:22px 0;text-align:center;background-color:#fff}.menu__open{position:absolute;top:28px;right:30px;width:22px;height:22px;padding:0;font-size:0;background-color:transparent;border:none;outline:none}.menu__list,.menu__offer,.menu__user{display:none}.menu__offer,.menu__delivery{display:none}.menu--closed .menu__open::before{content:"";position:absolute;top:4px;left:0px;width:21px;height:2px;background:black;-webkit-box-shadow:0 6px 0 0 black,0 12px 0 0 black;box-shadow:0 6px 0 0 black,0 12px 0 0 black}.menu__item{position:relative;border-top:1px solid #ececec;margin:0 -30px}.menu__search{position:relative}.menu__search-icon{position:absolute;top:32px;left:32px;width:18px;height:18px;opacity:0.2}.menu__cart{position:relative}.menu__icon-cart{position:absolute;top:30px;left:30px;width:21px;height:18px;opacity:0.2}.menu__link{display:block;padding:30px 0 30px 76px;font-weight:700;line-height:24px;text-align:left;background-color:white}@media (min-width:768px){.menu{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.menu__item{margin:0;border:none}.menu__logo{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:0}.menu__open{display:none}.menu__list{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-negative:0;flex-shrink:0;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1;width:384px;background-color:transparent;position:absolute;top:89px;left:0;min-height:85px}.menu__list-link{width:167px;padding:20px 0 10px;font-size:15px;line-height:24px;background-color:transparent}.menu__list-link--catalog{width:217px;padding-left:50px}.menu__offer{display:none}.menu__user{display:-webkit-box;display:-ms-flexbox;display:flex}.menu__search{position:relative;width:82px;height:88px;border-right:1px solid #ececec;border-left:1px solid #ececec}.menu__search-icon{position:absolute;top:36px;left:33px;width:19px;height:18px}.menu__search-link{position:relative;display:block;width:100%;height:100%;padding:0;font-size:0}.menu__cart{position:relative;width:265px;padding-right:0;padding-left:0}.menu__icon-cart{position:absolute;top:35px;left:31px;width:21px;height:18px}.menu__cart-link{position:relative;display:block;padding:32px 0 32px 82px;text-align:right;font-size:17px;line-height:24px}.menu__delivery{display:block;-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2;width:384px;padding:0px 0;position:absolute;top:89px;right:0;background-color:transparent;min-height:85px}.menu__delivery-link{background-color:transparent;font-size:15px;line-height:24px;font-weight:400;font-family:"OpenSans-Regular",Helvetica,Arial;padding:20px 0 10px 104px}}@media (min-width:1250px){.menu__list{background-color:#fff;-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1;width:450px;margin:0;position:static}.menu__list-link{background-color:#fff;font-size:17px;width:184px;padding:32px 0}.menu__list-link--catalog{border-right:1px solid #ececec}.menu__list-link--order{text-align:right}.menu__offer{position:absolute;top:89px;left:50px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2;border-top:1px solid #ececec;width:660px}.menu__offer-link{display:block;width:184px;padding:18px 0;background-color:transparent}.menu__offer-link--sale{padding-left:30px}.menu__delivery{position:absolute;top:89px;right:50px}.menu__delivery-link{text-align:right}}.intro{padding-top:35px;background-image:url("../images/hero-mobile@1x.jpg");background-repeat:no-repeat;background-position:center top;position:relative}@supports (background:-webkit-image-set(url("../images/hero-mobile@1x.webp") 1x)){.intro{background-image:url("../images/hero-mobile@1x.webp")}}@media (-webkit-min-device-pixel-ratio:1.5),(-o-min-device-pixel-ratio:3/2),(min-resolution:1.5dppx),(min-resolution:144dpi){.intro{background-image:url("../images/hero-mobile@2x.jpg");background-size:auto 75%}@supports (background:-webkit-image-set(url("../images/hero-mobile@2x.webp") 2x)){.intro{background-image:url("../images/hero-mobile@2x.webp")}}}.intro__heading{font-size:27px;line-height:30px;font-weight:700;text-align:center;padding:55px 8px 115px}.intro__items{position:relative;width:100vw;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}.intro__item{font-size:19px;line-height:24px;font-weight:700;text-align:left;color:white;width:100%}.intro__item-left{background-color:#63d1bb}.intro__item-right{background-color:#56c3b2}.intro__link{fill:#35a999;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;min-height:103px;width:260px;margin:0 auto}.intro__link-text{width:130px}@media (min-width:768px){.intro{background-image:url("../images/hero-desktop@1x.jpg")}@supports (background:-webkit-image-set(url("../images/hero-desktop@1x.webp") 1x)){.intro{background-image:url("../images/hero-desktop@1x.webp")}}}@media (min-width:768px) and (-webkit-min-device-pixel-ratio:1.5),(min-width:768px) and (-o-min-device-pixel-ratio:3/2),(min-width:768px) and (min-resolution:1.5dppx),(min-width:768px) and (min-resolution:144dpi){.intro{background-image:url("../images/hero-desktop@2x.jpg");background-size:auto 102%}@supports (background:-webkit-image-set(url("../images/hero-desktop@2x.webp") 2x)){.intro{background-image:url("../images/hero-desktop@2x.webp")}}}@media (min-width:768px){.intro::after{content:"";position:absolute;bottom:0;z-index:2;width:100%;height:20px;background-image:url(../images/bg-zigzag-fill.svg);background-repeat:repeat-x}.intro__heading{font-size:43px;line-height:50px;width:423px;padding:110px 0 382px;margin:0 auto;font-weight:400}.intro__items{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;width:100%}.intro__item{padding:0 37px 0 32px}}@media (min-width:1250px){.intro__heading{font-size:53px;line-height:57px;width:630px;padding:110px 0 370px;font-weight:700}.intro__item{padding:0 37px 0 36px}}.featured{position:relative;background-color:white;padding:34px 0 55px}.featured::after{content:"";position:absolute;bottom:0;width:100%;height:23px;background-image:url(../images/bg-zigzag-line.svg);background-repeat:repeat;background-size:100% 100%;z-index:5}.featured__heading{font-size:25px;line-height:30px;font-weight:700;margin-left:1px}.featured__title{font-size:17px;line-height:20px;font-weight:700;text-transform:uppercase;color:#63d1bb;padding:10px 0 30px}.featured__text{font-size:15px;line-height:24px;width:248px}.featured__image{width:100%;height:314px}@media (min-width:768px){.featured{padding:50px 0 70px}.featured__heading{font-size:43px;line-height:50px;margin-left:0}.featured__title{line-height:17px;width:75px;text-align:right;position:absolute;top:5px;right:78px}.featured__text{font-size:17px;line-height:30px;width:282px;padding:60px 0 45px}.featured__image{width:50%;height:403px;position:absolute;top:120px;right:0}}@media (min-width:1250px){.featured{padding:130px 0 100px}.featured__heading{position:relative;font-size:53px;line-height:57px;z-index:5;padding-left:175px}.featured__title{line-height:17px;width:75px;text-align:center;top:2px;left:91px}.featured__wrapper{padding-left:175px}.featured__image{width:50%;height:635px;position:absolute;top:-37px;right:0}}.modal{left:0;top:0;width:100%;height:100%;position:fixed;background-color:rgba(8,8,8,0.35);z-index:9;display:none}.modal-offer{display:none;position:fixed;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);z-index:10;width:100%;min-height:337px;background-color:white;border-top:1px solid #c7c7c7;-webkit-box-shadow:0 5px 10px 0 rgba(0,0,0,0.25);box-shadow:0 5px 10px 0 rgba(0,0,0,0.25);opacity:1}.modal-offer__container{width:260px;margin:0 auto}.modal-offer__input{display:none}.modal-offer__heading{font-size:25px;font-weight:700;width:150px;text-transform:uppercase;text-align:center;margin:0 auto;padding:26px 0}.modal-offer__title{font-size:15px;text-align:center;margin:0 auto}.modal-offer__submit{width:100%;color:white;background-color:#63d1bb;text-align:center;margin:0 auto;border:none;text-transform:uppercase;padding:17px 0;outline:none}.modal-offer__wrapper{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;padding:30px 0}.modal-offer__text{display:block;width:78px;padding-top:15px;padding-bottom:15px;font-weight:700;line-height:16px;text-align:center;border:2px solid #ececec}.modal-offer__input:checked+.modal-offer__text{border-color:#63d1bb}@media (min-width:768px){.modal-offer{width:570px;border:1px solid #c7c7c7}.modal-offer__container{width:352px;margin:0 auto}.modal-offer__heading{font-size:30px;width:100%}.modal-offer__title{font-size:17px}.modal-offer__text{width:108px}}</style>  
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>MISHKA</title>
-    <link
-      rel="preload"
-      href="fonts/OpenSans-Regular.woff2"
-      as="font"
-      crossorigin
-    />   
-    <link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font"
-      crossorigin
-    />
-    <link rel="preload" href="css/style.min.css" as="style" crossorigin />
-    <link rel="preload" href="js/main.js" as="script" crossorigin />
-    <link rel="stylesheet" href="css/style.min.css" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
-<link rel="manifest" href="images/favicons/site.webmanifest">
-<link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#00aba9">
-<meta name="theme-color" content="#ffffff">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>MISHKA</title>
+  <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" crossorigin />
+  <link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font" crossorigin />
+  <link rel="preload" href="css/style.min.css" as="style" crossorigin />
+  <link rel="preload" href="js/main.js" as="script" crossorigin />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <nav class="menu menu--closed">
-          <div class="menu__logo">
-            <a href="index.html" class="menu__logo-link">
-              <picture>
-                <source
-                  media="(min-width:1250px)"
-                  srcset="images/logo-desktop.svg"
-                />
-                <source
-                  media="(min-width:768px)"
-                  srcset="images/logo-tablet.svg"
-                />
-                <img
-                  class="menu__logo-main"
-                  src="images/logo-mobile.svg"
-                  alt="Mishka"
-                  title="Mishka"
-                />
-              </picture>
-            </a>
-          </div>
-          <button class="menu__open" type="button">Открыть меню</button>
-          
-          <ul class="menu__list">
-            <li class="menu__item menu__list-item">
-              <a href="catalog.html" class="menu__link menu__list-link menu__list-link--catalog">Каталог товаров</a>
-            </li>
-            <li class="menu__item menu__list-item">
-              <a href="form.html" class="menu__link menu__list-link menu__list-link--order"
-                >Вязание на заказ</a
-              >
-            </li>
-          </ul>
-          <ul class="menu__offer">
-            <li class="menu__item menu__offer-item">
-              <a href="#" class="menu__link menu__offer-link"
-                >Новые поступления</a
-              >
-            </li>
-            <li class="menu__item menu__offer-item">
-              <a href="#" class="menu__link menu__offer-link menu__offer-link--sale">Распродажа</a>
-            </li>
-          </ul>
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="images/favicons/site.webmanifest">
+  <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#00aba9">
+  <meta name="theme-color" content="#ffffff">
 
-          
+</head>
 
-          <ul class="menu__user">
-            <li class="menu__item">
-              <div class="menu__search">
-                <a href="#" class="menu__link menu__search-link"
-                  >Поиск по сайту
-                  <svg class="menu__search-icon" width="24" height="24">
-                    <use  xlink:href="images/sprites.svg#icon-search"></use>
-                  </svg>
-                </a>
-              </div>
-            </li>
-            <li class="menu__item">
-              <div class="menu__cart">
-                <a href="#" class="menu__link menu__cart-link"
-                  >Корзина: пока пуста
-                  <svg class="menu__icon-cart" width="24" height="24">
-                    <use  xlink:href="images/sprites.svg#icon-cart"></use>
-                  </svg>
-                </a>
-              </div>
-            </li>
-          </ul>
-        
-          <div class="menu__delivery">
-            <a href="#" class="menu__link menu__delivery-link"
-              >Бесплатная доставка по России</a
-            >
-          </div>
-        </nav>
-      </div>
-    </header>
-
-    <main class="main">
-<section class="intro">
+<body>
+  <header class="header">
     <div class="container">
+      <nav class="menu menu--closed">
+        <div class="menu__logo">
+          <a href="index.html" class="menu__logo-link">
+            <picture>
+              <source media="(min-width:1250px)" srcset="images/logo-desktop.svg" />
+              <source media="(min-width:768px)" srcset="images/logo-tablet.svg" />
+              <img class="menu__logo-main" src="images/logo-mobile.svg" alt="Mishka" title="Mishka" />
+            </picture>
+          </a>
+        </div>
+        <button class="menu__open" type="button">Открыть меню</button>
+
+        <ul class="menu__list">
+          <li class="menu__item menu__list-item">
+            <a href="catalog.html" class="menu__link menu__list-link menu__list-link--catalog">Каталог товаров</a>
+          </li>
+          <li class="menu__item menu__list-item">
+            <a href="form.html" class="menu__link menu__list-link menu__list-link--order">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="menu__offer">
+          <li class="menu__item menu__offer-item">
+            <a href="#" class="menu__link menu__offer-link">Новые поступления</a>
+          </li>
+          <li class="menu__item menu__offer-item">
+            <a href="#" class="menu__link menu__offer-link menu__offer-link--sale">Распродажа</a>
+          </li>
+        </ul>
+
+        <ul class="menu__user">
+          <li class="menu__item">
+            <div class="menu__search">
+              <a href="#" class="menu__link menu__search-link">Поиск по сайту
+                <svg class="menu__search-icon" width="24" height="24">
+                  <use xlink:href="images/sprites.svg#icon-search"></use>
+                </svg>
+              </a>
+            </div>
+          </li>
+          <li class="menu__item">
+            <div class="menu__cart">
+              <a href="#" class="menu__link menu__cart-link">Корзина: пока пуста
+                <svg class="menu__icon-cart" width="24" height="24">
+                  <use xlink:href="images/sprites.svg#icon-cart"></use>
+                </svg>
+              </a>
+            </div>
+          </li>
+        </ul>
+
+        <div class="menu__delivery">
+          <a href="#" class="menu__link menu__delivery-link">Бесплатная доставка по России</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="intro">
+      <div class="container">
         <h1 class="intro__heading">Милые штуки ручной работы для дома</h1>
         <div class="intro__items">
-            <div class="intro__item intro__item-left">
-                <a href="#" class="intro__link">
-                  <p class="intro__link-text">Предметы интерьера</p>
-                  <svg class="intro__icon-interior" width="40.219" height="62.411px">
-                  <use  xlink:href="images/sprites.svg#icon-interior"></use>
-                  </svg>
-                </a>
-              </div>
-              <div class="intro__item intro__item-right">
-                <a href="#" class="intro__link">
-                  <p class="intro__link-text">Детские игрушки</p>
-                  <svg class="intro__icon-toy" width="40.219" height="62.411px">
-                    <use  xlink:href="images/sprites.svg#icon-toy"></use>
-                  </svg>
-                </a></div>
-            </div>
+          <div class="intro__item intro__item-left">
+            <a href="#" class="intro__link">
+              <p class="intro__link-text">Предметы интерьера</p>
+              <svg class="intro__icon-interior" width="40.219" height="62.411px">
+                <use xlink:href="images/sprites.svg#icon-interior"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="intro__item intro__item-right">
+            <a href="#" class="intro__link">
+              <p class="intro__link-text">Детские игрушки</p>
+              <svg class="intro__icon-toy" width="40.219" height="62.411px">
+                <use xlink:href="images/sprites.svg#icon-toy"></use>
+              </svg>
+            </a></div>
         </div>
-    </div>
-</section>
+      </div>
+      </div>
+    </section>
 
-<section class="featured">
-    <div class="container">
+    <section class="featured">
+      <div class="container">
         <h2 class="featured__heading">Вязаные корзинки</h2>
         <div class="featured__title">Товар недели</div>
         <div class="featured__wrapper">
-            <p class="featured__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-            <table class="featured__table">
-              <tr class="featured__table-row">
-                <td class="featured__table-col">Цвет:</td>
-                <td class="featured__table-col">&laquo;Тиффани&raquo;/серый</td>
-              </tr>
-              <tr class="featured__table-row">
-                <td class="featured__table-col">Диаметр:</td>
-                <td class="featured__table-col">25 см</td>
-              </tr>
-              <tr class="featured__table-row">
-                <td class="featured__table-col">Высота:</td>
-                <td class="featured__table-col">15 см</td>
-              </tr>
-            </table>
-            <div class="featured__image">
-                <picture>
-                  <source media="(min-width:1250px)" srcset="images/triple-set-desktop@1x.jpg 1x, images/triple-set-desktop@2x.jpg 2x">
-                  <source media="(min-width:768px)" srcset="images/triple-set-tablet@1x.jpg 1x, images/triple-set-tablet@2x.jpg 2x">
-                  <img class="featured__img" src="images/triple-set-mobile@1x.jpg" srcset="images/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки ручной работы">
-                                  </picture>
-              </div>
-              <div class="featured__order">
-                <p class="featured__price">Цена: 990 руб.</p>
-                <a href="#" class="featured__btn">               
-                  Заказать</a>
-              </div>
-        </div>
-    </div>
-</section>
-
-<section class="about">
-    <div class="container">
-      <div class="about__wrapper">
-        <h2 class="about__heading">Коротко о нас:</h2>
-        <div class="about__items">
-          <div class="about__item about__item--first">
-            <svg class="about__item-img" width="31.972px" height="37.301px">
-              <use  xlink:href="images/sprites.svg#icon-1"></use>
-            </svg>
-            <p class="about__text">Экологически чистые материалы</p>
+          <p class="featured__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
+            размерах.</p>
+          <table class="featured__table">
+            <tr class="featured__table-row">
+              <td class="featured__table-col">Цвет:</td>
+              <td class="featured__table-col">&laquo;Тиффани&raquo;/серый</td>
+            </tr>
+            <tr class="featured__table-row">
+              <td class="featured__table-col">Диаметр:</td>
+              <td class="featured__table-col">25 см</td>
+            </tr>
+            <tr class="featured__table-row">
+              <td class="featured__table-col">Высота:</td>
+              <td class="featured__table-col">15 см</td>
+            </tr>
+          </table>
+          <div class="featured__image">
+            <picture>
+              <source media="(min-width:1250px)"
+                srcset="images/triple-set-desktop@1x.jpg 1x, images/triple-set-desktop@2x.jpg 2x">
+              <source media="(min-width:768px)"
+                srcset="images/triple-set-tablet@1x.jpg 1x, images/triple-set-tablet@2x.jpg 2x">
+              <img class="featured__img" src="images/triple-set-mobile@1x.jpg"
+                srcset="images/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки ручной работы">
+            </picture>
           </div>
-          <div class="about__item about__item--second">
-            <svg class="about__item-img" width="34.373px" height="34.373px">
-              <use  xlink:href="images/sprites.svg#icon-2"></use>
-            </svg>
-            <p class="about__text">Скандинавский стиль по российской цене</p>
-          </div>
-          <div class="about__item about__item--third">
-            <svg class="about__item-img" width="46.575px" height="27.332px">
-              <use  xlink:href="images/sprites.svg#icon-3"></use>
-            </svg>
-            <p class="about__text">Увеличивает лайки на фотографиях</p>
-          </div>
-          <div class="about__item about__item--fourth">
-            <svg class="about__item-img" width="54.156px" height="23.183px">
-              <use  xlink:href="images/sprites.svg#icon-4"></use>
-            </svg>
-            <p class="about__text">Связано вручную с любовью и умилением</p>
-          </div>
-          <div class="about__item about__item--fifth">
-            <svg class="about__item-img" width="33.05px" height="27.857px">
-              <use  xlink:href="images/sprites.svg#icon-5"></use>
-            </svg>
-            <p class="about__text">Поддержка отечественного производителя</p>
-          </div>
-          <div class="about__item about__item--sixth">
-            <svg class="about__item-img" width="32.666px" height="32.486px">
-              <use  xlink:href="images/sprites.svg#icon-6"></use>
-            </svg>
-            <p class="about__text">Поставляется в подарочной упаковке</p>
+          <div class="featured__order">
+            <p class="featured__price">Цена: 990 руб.</p>
+            <a href="#" class="featured__btn">
+              Заказать</a>
           </div>
         </div>
       </div>
-    </div>
-</section>
+    </section>
 
-<section class="reviews">
-    <div class="container">
-      <div class="reviews__wrapper">
-      <h2 class="reviews__heading">Отзывы</h2>
-      <div class="reviews__review">
-        <p class="reviews__text">Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильнее, а также набирают больше лайков!</p>
-        <p class="reviews__author">Анастасия Красильникова</p>
-        <a class="reviews__link" href="#">@misssssiskras</a>
-      </div>      
-      <div class="reviews__buttons">
-        <button  class="reviews__button reviews__button-prev" type="button">Назад</button>
-        <button class="reviews__button reviews__button-next" type="button">Вперед</button>
+    <section class="about">
+      <div class="container">
+        <div class="about__wrapper">
+          <h2 class="about__heading">Коротко о нас:</h2>
+          <div class="about__items">
+            <div class="about__item about__item--first">
+              <svg class="about__item-img" width="31.972px" height="37.301px">
+                <use xlink:href="images/sprites.svg#icon-1"></use>
+              </svg>
+              <p class="about__text">Экологически чистые материалы</p>
+            </div>
+            <div class="about__item about__item--second">
+              <svg class="about__item-img" width="34.373px" height="34.373px">
+                <use xlink:href="images/sprites.svg#icon-2"></use>
+              </svg>
+              <p class="about__text">Скандинавский стиль по российской цене</p>
+            </div>
+            <div class="about__item about__item--third">
+              <svg class="about__item-img" width="46.575px" height="27.332px">
+                <use xlink:href="images/sprites.svg#icon-3"></use>
+              </svg>
+              <p class="about__text">Увеличивает лайки на фотографиях</p>
+            </div>
+            <div class="about__item about__item--fourth">
+              <svg class="about__item-img" width="54.156px" height="23.183px">
+                <use xlink:href="images/sprites.svg#icon-4"></use>
+              </svg>
+              <p class="about__text">Связано вручную с любовью и умилением</p>
+            </div>
+            <div class="about__item about__item--fifth">
+              <svg class="about__item-img" width="33.05px" height="27.857px">
+                <use xlink:href="images/sprites.svg#icon-5"></use>
+              </svg>
+              <p class="about__text">Поддержка отечественного производителя</p>
+            </div>
+            <div class="about__item about__item--sixth">
+              <svg class="about__item-img" width="32.666px" height="32.486px">
+                <use xlink:href="images/sprites.svg#icon-6"></use>
+              </svg>
+              <p class="about__text">Поставляется в подарочной упаковке</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <a href="#" class="reviews__write">Написать</a>
-    </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="contacts">
-    <div class="container">
-      <h2 class="contacts__heading">Контакты</h2>
-<div class="contacts__wrapper">
-    <p class="contacts__wrapper-title">e-mail:</p>
-    <a href="info@mimimishkashop.ru" class="contacts__wrapper-link contacts__wrapper-link--mail">info@mimimishkashop.ru</a>
-    <span class="contacts__wrapper-title">адрес:</span>
-    <a href="#" class="contacts__wrapper-link">
-      <span class="contacts__wrapper-link--city">
-      г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
-    </a>
-</div>     
-    </div>
-    <div class="contacts__map">
-    <iframe
-          class="contacts__map-inner"
-          loading="lazy"
+    <section class="reviews">
+
+
+      <div class="container swiper">
+
+        <div class="swiper-wrapper">
+
+          <div class="reviews__wrapper swiper-slide">
+            <h2 class="reviews__heading">Отзывы</h2>
+            <div class="reviews__review">
+              <p class="reviews__text">Я молодая мама, но все равно фотографии не набирали и близко такого количества
+                лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
+                фотографии сразу стали более стильнее, а также набирают больше лайков!</p>
+              <p class="reviews__author">Анастасия Красильникова</p>
+              <a class="reviews__link" href="#">@misssssiskras</a>
+            </div>
+            <a href="#" class="reviews__write">Написать</a>
+          </div>
+
+          <div class="reviews__wrapper swiper-slide">
+            <h2 class="reviews__heading">Отзывы</h2>
+            <div class="reviews__review">
+              <p class="reviews__text">Я молодая мама, но все равно фотографии не набирали и близко такого количества
+                лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
+                фотографии сразу стали более стильнее, а также набирают больше лайков!</p>
+              <p class="reviews__author">Анастасия Красильникова</p>
+              <a class="reviews__link" href="#">@misssssiskras</a>
+            </div>
+            <!-- <div class="reviews__buttons">
+              <button class="reviews__button reviews__button-prev" type="button">Назад</button>
+              <button class="reviews__button reviews__button-next" type="button">Вперед</button>
+            </div> -->
+            <a href="#" class="reviews__write">Написать</a>
+          </div>
+
+          <div class="reviews__wrapper swiper-slide">
+            <h2 class="reviews__heading">Отзывы</h2>
+            <div class="reviews__review">
+              <p class="reviews__text">Я молодая мама, но все равно фотографии не набирали и близко такого количества
+                лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
+                фотографии сразу стали более стильнее, а также набирают больше лайков!</p>
+              <p class="reviews__author">Анастасия Красильникова</p>
+              <a class="reviews__link" href="#">@misssssiskras</a>
+            </div>
+            <a href="#" class="reviews__write">Написать</a>
+          </div>
+
+
+
+
+        </div>
+        <button class="reviews__button reviews__button-prev swiper-button-prev" type="button">Назад</button>
+        <button class="reviews__button reviews__button-next swiper-button-next" type="button">Вперед</button>
+
+
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div class="container">
+        <h2 class="contacts__heading">Контакты</h2>
+        <div class="contacts__wrapper">
+          <p class="contacts__wrapper-title">e-mail:</p>
+          <a href="info@mimimishkashop.ru"
+            class="contacts__wrapper-link contacts__wrapper-link--mail">info@mimimishkashop.ru</a>
+          <span class="contacts__wrapper-title">адрес:</span>
+          <a href="#" class="contacts__wrapper-link">
+            <span class="contacts__wrapper-link--city">
+              г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
+          </a>
+        </div>
+      </div>
+      <div class="contacts__map">
+        <iframe class="contacts__map-inner" loading="lazy"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6062165480919!2d30.323551654024424!3d59.93867617420508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1604330991202!5m2!1sru!2sru"
-          frameborder="0"
-          style="border: 0"
-          allowfullscreen=""
-        >
+          frameborder="0" style="border: 0" allowfullscreen="">
         </iframe>
       </div>
-    </div>
+      </div>
 
-    <div class="container">
-      <a href="#" class="contacts__btn">Напишите нам</a>
-    </div>
-  </section>
-</main>
+      <div class="container">
+        <a href="#" class="contacts__btn">Напишите нам</a>
+      </div>
+    </section>
+  </main>
 
   <footer class="main-footer">
     <div class="container">
       <div class="main-footer__wrapper">
-      <div class="main-footer__logo">
-        <a href="index.html" class="main-footer__link">
-          <svg class="main-footer__logotype" width="101.615" height="34.056">
-          <use xlink:href="images/sprites.svg#logo-footer"></use>
-          </svg>
-        </a>
-      </div>
-      <div class="main-footer__social">
-        <a href="#" class="main-footer__social-link main-footer__social-link--inst">Инстаграмм
-          <svg class="main-footer__icon-insta" width="21.769" height="21.334">
-          <use xlink:href="images/sprites.svg#icon-insta"></use>
-          </svg>
-        </a>
-        <a href="#" class="main-footer__social-link main-footer__social-link--fb">Фейсбук
-          <svg class="main-footer__icon-fb" width="14.962" height="27.718">
-          <use xlink:href="images/sprites.svg#icon-fb"></use>
-          </svg>
-        </a>
-        <a href="#" class="main-footer__social-link main-footer__social-link--tw">Твиттер
-          <svg class="main-footer__icon-twitter" width="23.494" height="20.168">
-          <use xlink:href="images/sprites.svg#icon-twitter"></use>
-          </svg>
-        </a>
-      </div>
-      <div class="main-footer__copyright">
-        <a href="https://github.com/semal17" class="main-footer__copyright-link">
-          <span class="main-footer__copyright-text">
-          Разработано</span>
-          <svg class="main-footer__icon-github" width="30" height="30">
-            <use xlink:href="images/sprites.svg#github"></use>
-          </svg>
-        </a>
+        <div class="main-footer__logo">
+          <a href="index.html" class="main-footer__link">
+            <svg class="main-footer__logotype" width="101.615" height="34.056">
+              <use xlink:href="images/sprites.svg#logo-footer"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="main-footer__social">
+          <a href="#" class="main-footer__social-link main-footer__social-link--inst">Инстаграмм
+            <svg class="main-footer__icon-insta" width="21.769" height="21.334">
+              <use xlink:href="images/sprites.svg#icon-insta"></use>
+            </svg>
+          </a>
+          <a href="#" class="main-footer__social-link main-footer__social-link--fb">Фейсбук
+            <svg class="main-footer__icon-fb" width="14.962" height="27.718">
+              <use xlink:href="images/sprites.svg#icon-fb"></use>
+            </svg>
+          </a>
+          <a href="#" class="main-footer__social-link main-footer__social-link--tw">Твиттер
+            <svg class="main-footer__icon-twitter" width="23.494" height="20.168">
+              <use xlink:href="images/sprites.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="main-footer__copyright">
+          <a href="https://github.com/semal17" class="main-footer__copyright-link">
+            <span class="main-footer__copyright-text">
+              Разработано</span>
+            <svg class="main-footer__icon-github" width="30" height="30">
+              <use xlink:href="images/sprites.svg#github"></use>
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
-    </div>
-  </footer>   
+  </footer>
 
 
   <div class="modal">
@@ -314,25 +328,29 @@
         <form class="modal-offer__form" action="#" method="get">
           <div class="modal-offer__title">Выберите размер:</div>
           <div class="modal-offer__wrapper">
-            <label class="modal-offer__radio-wrapper">
-                <input class="modal-offer__input" type="radio" name="modal-offer" value="s" checked>
-                <span class="modal-offer__text">S</span>
-              </label>
-            <label class="modal-offer__radio-wrapper">
-                <input class="modal-offer__input" type="radio" name="modal-offer" value="m">
-                <span class="modal-offer__text">M</span>
-              </label>
-            <label class="modal-offer__radio-wrapper">
-                <input class="modal-offer__input" type="radio" name="modal-offer" value="l">
-                <span class="modal-offer__text">L</span>
-              </label>
+            <label class="modal-offer__radio-wrapper" for="sizeChoice1">
+              <input class="modal-offer__input" type="radio" id="sizeChoice1" name="modal-offer" value="s" checked>
+              <span class="modal-offer__text">S</span>
+            </label>
+            <label class="modal-offer__radio-wrapper" for="sizeChoice2">
+              <input class="modal-offer__input" type="radio" id="sizeChoice2" name="modal-offer" value="m">
+              <span class="modal-offer__text">M</span>
+            </label>
+            <label class="modal-offer__radio-wrapper" for="sizeChoice3">
+              <input class="modal-offer__input" type="radio" id="sizeChoice3" name="modal-offer" value="l">
+              <span class="modal-offer__text">L</span>
+            </label>
           </div>
           <button class="modal-offer__submit" type="submit">Добавить</button>
-          </form>
-        </div>
+        </form>
       </div>
     </div>
-     
-    <script src="js/main.min.js"></script>
-  </body>
+  </div>
+
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/main.min.js"></script>
+
+</body>
+
 </html>
